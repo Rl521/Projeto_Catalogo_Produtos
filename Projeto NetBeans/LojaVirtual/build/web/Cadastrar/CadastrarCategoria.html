@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cadastrar Categoria - ShopBase</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow">
+                    <div class="card-header bg-primary text-white">
+                        <h1 class="h4 mb-0">Cadastrar Nova Categoria</h1>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="../Cadastrar/CadastrarCategoria.jsp">
+                            <div class="mb-3">
+                                <label for="nome" class="form-label">Nome da Categoria:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" 
+                                       placeholder="Digite o nome da categoria" required>
+                            </div>
+                            
+                            <div class="d-flex justify-content-between mt-4">
+                                <button type="reset" class="btn btn-secondary">Limpar</button>
+                                <div>
+                                    <a href="../index.jsp" class="btn btn-outline-secondary me-2">Voltar</a>
+                                    <button type="submit" class="btn btn-primary">Cadastrar Categoria</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
