@@ -41,6 +41,7 @@
             <a class="nav-link" href="views/Fornecedores.jsp" target="mainFrame">Fornecedores</a>
             <a class="nav-link" href="views/Clientes.jsp" target="mainFrame">Clientes</a>
             <a class="nav-link" href="views/Pedidos.jsp" target="mainFrame">Pedidos</a>
+            <a class="nav-link" href="views/Usuarios.jsp" target="mainFrame">Usuários</a>
         </div>
     </nav>
 

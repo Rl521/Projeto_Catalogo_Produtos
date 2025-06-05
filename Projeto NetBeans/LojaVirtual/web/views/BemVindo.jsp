@@ -9,6 +9,9 @@
     RGM:       : 11241403288
 --%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+    boolean logado = session.getAttribute("usuarioLogado") != null;
+%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,6 +30,12 @@
                 </p>
                 <hr>
                 <p class="text-secondary">Utilize os links do menu para começar.</p>
+                <% if (!logado) { %>
+                    <button class="btn btn-primary mt-3"
+                        onclick="window.top.location.href='Login.jsp'">
+                        Iniciar Sessão
+                    </button>
+                <% } %>
             </div>
         </div>
     </div>

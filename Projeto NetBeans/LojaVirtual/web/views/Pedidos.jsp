@@ -15,6 +15,16 @@
 <%@ page import="dao.PedidoDAO" %>
 <%@ page import="model.Pedido" %>
 <%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%
+    if (session.getAttribute("usuarioLogado") == null) {
+%>
+    <script>
+        window.top.location.href = "Login.jsp";
+    </script>
+<%
+        return;
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>
